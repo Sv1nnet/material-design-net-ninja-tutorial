@@ -18,12 +18,53 @@
 </head>
 
 <body>
-  <div class="container">
+  <!-- 
+    Для навбара используется класс .nav-wrapper тега nav. Для центрирования используется .container,
+    а для самой навигации ul и вложенными в него li > a
+  -->
+  <nav class="nav-wrapper indigo">
+    <div class="container">
+      <a href="#" class="brand-logo">Site Title</a>
+      <!--
+        .sidenav-triger будет содержать иконку навигации и активировать саму навигацию приклике.
+        В data-target нужно указать id элемента мобильной навигации
+      -->
+      <a href="#" class="sidenav-trigger" data-target="mobile-links">
+        <i class="material-icons">menu</i>
+      </a>
+      <!--
+        Чтобы скрывать навигацию на больших и средних экранах используется .hide-on-med-and-down
+      -->
+      <ul class="right hide-on-med-and-down">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  </div>
+  <!--
+    Мобильная навигация выносится отдельно
+  -->
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Login</a></li>
+  </ul>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- 
+    При загрузке документа инициализируем мобильную навигацию функциональностью
+  -->
+  <script>
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+    });
+  </script>
 </body>
 
 </html>
