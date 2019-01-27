@@ -35,6 +35,14 @@
       background: transparent;
     }
 
+    .datepicker-date-display, .datepicker-table td.is-selected {
+      background-color: indigo;
+    }
+
+    .confirmation-btns button {
+      color: indigo;
+    }
+
     @media screen and (max-width: 670px) {
       header {
         min-height: 500px;
@@ -143,15 +151,57 @@
     <img src="img/stars.jpg" alt="" class="responsive-img">
   </div>
 </div>
-<div class="container">
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae id alias tempore repudiandae, optio dolor.</p>
-  <p>Fugiat, quis corrupti quae illum perferendis possimus, soluta eum architecto officiis quisquam dicta voluptate
-    deserunt.</p>
-  <p>Nisi ut ad temporibus, aut, deserunt neque eaque, animi vel dolor ea quibusdam ducimus porro.</p>
-  <p>Nisi ut ad temporibus, aut, deserunt neque eaque, animi vel dolor ea quibusdam ducimus porro.</p>
-  <p>Nisi ut ad temporibus, aut, deserunt neque eaque, animi vel dolor ea quibusdam ducimus porro.</p>
-</div>
+
 <!-- contact form -->
+<section class="section container" id="contact">
+  <div class="row">
+    <div class="col s12 l5">
+      <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus rem sint voluptas! Quo, nesciunt?</p>
+      <p>Saepe, possimus? Assumenda perferendis tempore quas expedita non odio aliquam rem voluptate? Odio, ducimus
+        vel!</p>
+      <p>Ad in, perferendis distinctio ea voluptas praesentium pariatur, maiores hic sequi expedita asperiores ullam
+        alias!</p>
+      <p>Quisquam, dolorem fugiat facilis officiis, quibusdam mollitia, ut architecto eaque est eius vero eum iusto?</p>
+    </div>
+    <div class="col s12 l5 offset-l2">
+      <form action="" method="post">
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <label for="email">Your Email</label>
+          <input type="email" name="" id="email">
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">message</i>
+          <label for="message">Your message</label>
+          <textarea name="" id="message" class="materialize-textarea"></textarea>
+        </div>
+        <div class="input-field">
+          <label for="date">Choose a data you need me for...</label>
+          <input type="text" name="" id="date" class="datepicker">
+        </div>
+        <div class="input-field">
+          <p>Services required...</p>
+          <p>
+            <label>
+              <input type="checkbox" name="" id="">
+              <span>Photography</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="" id="">
+              <span>Editing</span>
+            </label>
+          </p>
+        </div>
+        <div class="input-field center">
+          <button class="btn indigo">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 
 <!-- footer -->
 
@@ -164,6 +214,9 @@
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
     $('.tabs').tabs();
+    $('.datepicker').datepicker({
+      disableWeekends: true
+    });
   });
 </script>
 </body>
