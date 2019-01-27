@@ -43,9 +43,19 @@
       color: indigo;
     }
 
+    #submit {
+      width: 100%;
+    }
+
     @media screen and (max-width: 670px) {
       header {
         min-height: 500px;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      #submit {
+        height: 48px;
       }
     }
   </style>
@@ -196,7 +206,7 @@
           </p>
         </div>
         <div class="input-field center">
-          <button class="btn indigo">Submit</button>
+          <button class="btn indigo" id="submit">Submit</button>
         </div>
       </form>
     </div>
@@ -204,6 +214,29 @@
 </section>
 
 <!-- footer -->
+<footer class="page-footer grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l6">
+        <h5>About Me</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus saepe soluta dolore fuga vel!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam natus autem, non quis inventore quia.</p>
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="" class="grey-text text-lighten-3">Facebook</a></li>
+          <li><a href="" class="grey-text text-lighten-3">Twitter</a></li>
+          <li><a href="" class="grey-text text-lighten-3">Linked In</a></li>
+          <li><a href="" class="grey-text text-lighten-3">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-4">
+    <div class="container center-align">&copy; 2018 Photo Ninja</div>
+  </div>
+</footer>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
